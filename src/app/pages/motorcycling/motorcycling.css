@@ -1,0 +1,79 @@
+/* HERO */
+.hero {
+  position: relative;
+  height: calc(100vh - 104px);
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  inset: 0;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* CENTER TEXT */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wolf {
+  font-family: 'Old English Text MT', serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+.limited {
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-top: 6px;
+}
+
+.hero-logo {
+  width: 80px;
+  margin-top: 18px;
+}
+
+/* BOTTOM RIGHT */
+.hero-bottom {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  text-align: right;
+}
+
+.hero-bottom p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 22px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  transition: background .3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
