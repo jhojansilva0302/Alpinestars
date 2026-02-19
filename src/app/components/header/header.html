@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Alpinestars</title>
-  <link rel="stylesheet" href="header.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-
-  <!-- HEADER -->
   <header class="header">
 
 
     <div class="nav-bar">
       <div class="nav-left">
-        <img src="/logo.png" alt="Logo" class="logo">
+        <img src="/img/logo/logo.png" alt="Logo" class="logo">
       </div>
 
       <nav class="nav-center">
@@ -49,18 +37,3 @@
   </header>
 
 
-
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    let current = 0;
-
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 5000);
-  </script>
-
-</body>
-
-</html>

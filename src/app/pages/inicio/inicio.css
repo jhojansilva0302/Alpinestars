@@ -1,79 +1,72 @@
 /* HERO */
 .hero {
-  position: relative;
-  height: calc(100vh - 104px);
-  overflow: hidden;
-}
-
-.carousel {
-  position: absolute;
-  inset: 0;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
+  width: 100%;
+  height: 100vh; /* ocupa toda la pantalla */
+  background-image: url('/hero-inicio1.webp');
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-/* CENTER TEXT */
-.hero-content {
-  position: absolute;
-  inset: 0;
+  background-repeat: no-repeat;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
-.wolf {
-  font-family: 'Old English Text MT', serif;
-  font-size: 72px;
-  letter-spacing: 2px;
-}
-
-.limited {
-  font-size: 14px;
-  letter-spacing: 4px;
-  margin-top: 6px;
-}
-
-.hero-logo {
-  width: 80px;
-  margin-top: 18px;
-}
-
-/* BOTTOM RIGHT */
-.hero-bottom {
+/* Oscurecer un poco la imagen */
+.hero::before {
+  content: "";
   position: absolute;
-  right: 40px;
-  bottom: 40px;
-  text-align: right;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.hero-bottom p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.btn {
-  border: 1px solid #fff;
-  padding: 10px 22px;
-  text-decoration: none;
+/* Contenido encima */
+.hero-content {
+  position: relative;
+  text-align: center;
   color: #fff;
-  font-size: 13px;
-  transition: background .3s;
 }
 
-.btn:hover {
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  padding: 12px 30px;
   background: #fff;
   color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #ccc;
+}
+
+/* Sección de abajo */
+.contenido {
+  padding: 80px 10%;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  height: 90vh;
+  background-image: url('/img/inicio/hero-inicio1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
 }

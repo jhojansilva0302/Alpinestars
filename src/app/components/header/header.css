@@ -79,3 +79,11 @@ body {
   padding: 0;
   gap: 22px;
 }
+
+
+.logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
